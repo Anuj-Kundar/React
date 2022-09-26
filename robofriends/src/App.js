@@ -7,7 +7,7 @@ import 'tachyons';
 
 class App extends Component {
     constructor() {
-        super();
+        super()
         this.state = {
             robots: robots,
             searchfield: ''
@@ -15,7 +15,7 @@ class App extends Component {
     }
 
     onSearchChange=(event)=> {
-        this.setState({searchfield: event.target.value});
+        this.setState({searchfield: event.target.value})
     }
     render() {
         const filteredRobots=this.state.robots.filter(robots=>{
